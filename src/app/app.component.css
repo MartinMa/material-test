@@ -6,3 +6,38 @@ p {
   padding: 30px;
   background: #B6B6B6
 }
+#adminback {
+  background: #fff;
+  bottom: 0;
+  direction: ltr;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+#admin-content {
+  position: relative;
+  z-index: 2;
+}
+
+@media all and (min-width: 601px) {
+  #adminback {
+    background: #e0e0e0;
+   }
+}
+
+#adminback svg {
+  display: none;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+}
+
+@media all and (min-width: 601px) {
+  #adminback svg {
+    display: block;
+  }
+}
