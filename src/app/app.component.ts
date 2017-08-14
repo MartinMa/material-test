@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 
+import { MdDialog } from '@angular/material';
+
+import { DialogComponent } from './dialog/dialog.component';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,4 +15,10 @@ export class AppComponent {
     It is just here to fill up some space.
     Bla bla bla Yada yada yada.
     And repeat.`;
+
+  constructor(public dialog: MdDialog) { }
+
+  openDialog() {
+    this.dialog.open(DialogComponent);
+  }
 }
