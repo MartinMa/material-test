@@ -5,9 +5,9 @@
 
 @import "./bootstrap.css";
 
-/* This is a problem in combination with the Material scroll blocker */
+html {
+  overflow-y: scroll;
+}
 body {
   padding-top: 80px;
-  overflow-y: scroll !important;
-  padding-right: 0 !important;
 }
